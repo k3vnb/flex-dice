@@ -1,0 +1,68 @@
+body {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+div {
+  height: 100px;
+  width: 100px;
+  display: flex;
+}
+body div {
+  padding: 1%;
+  background-color: white;
+}
+.pip {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
+.first-face {
+  justify-content: center;
+  align-items: center;
+}
+.second-face {
+  justify-content: space-between;
+}
+.second-face .pip:nth-child(2) {
+  align-self: flex-end;
+}
+.third-face {
+  justify-content: space-between;
+}
+.third-face .pip:nth-child(2) {
+  align-self: center;
+}
+.third-face .pip:nth-child(3) {
+  align-self: flex-end;
+}
+.column {
+  flex-direction: column;
+}
+.fourth-face .column {
+  justify-content: space-between;
+}
+.fourth-face .column:nth-child(2) {
+  align-items: flex-end;
+}
+
+.fifth-face .column:first-child {
+  justify-content: space-between;
+}
+.fifth-face .column:last-child {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fifth-face .column:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+.sixth-face .column:first-child {
+  justify-content: space-between;
+}
+.sixth-face .column:last-child {
+  justify-content: space-between;
+  align-items: flex-end;
+}
